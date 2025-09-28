@@ -1,0 +1,89 @@
+body {
+  background: #0f172a;
+  color: #e6eef8;
+}
+
+.grid {
+  display: grid;
+  gap: 1px;
+  background: #111827;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.cell {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.cell.empty {
+  background: linear-gradient(180deg, #0b1220, #0f172a);
+}
+
+.cell.obstacle {
+  background: repeating-linear-gradient(45deg, #3b3f52 0 4px, #2b2f43 4px 8px);
+}
+
+.cell.start {
+  background: linear-gradient(180deg, #0ea5a5, #06b6d4);
+}
+
+.cell.end {
+  background: linear-gradient(180deg, #f97316, #fb923c);
+}
+
+.cell.open {
+  background: #1e293b;
+}
+
+.cell.closed {
+  background: #0ea5a533;
+}
+
+.cell.path {
+  background: linear-gradient(90deg, #f0abfc, #60a5fa);
+  box-shadow: 0 0 8px rgba(96, 165, 250, 0.4) inset;
+}
+
+.controls .btn {
+  margin-right: 6px;
+}
+
+.legend .item {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.weight-1 {
+  background: #0f172a;
+}
+
+.weight-2 {
+  background: #3f3f55;
+}
+
+.weight-5 {
+  background: #5f3f55;
+}
+
+.overlay {
+  font-size: 10px;
+  color: #000000aa;
+}
+
+.small {
+  font-size: 11px;
+}
+
+.panel {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+  padding: 12px;
+}
